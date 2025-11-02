@@ -4,3 +4,9 @@
 [submodule "roles/plex"]
 	path = roles/plex
 	url = https://github.com/r-pufky/ansible_plex
+[submodule "roles/paperless_ngx"]
+	path = roles/paperless_ngx
+	url = https://github.com/r-pufky/ansible_paperless_ngx
+[submodule "roles/firefly"]
+	path = roles/firefly
+	url = https://github.com/r-pufky/ansible_firefly

@@ -7,8 +7,10 @@ releases:
     changes:
       release_summary: 'Create media collection.'
       major_changes:
-        - 'roles/plex - migrated from r_pufky.srv.'
+        - 'roles/firefly - migrated from r_pufky.srv.'
         - 'roles/navidrome - migrated from r_pufky.srv.'
+        - 'roles/paperless_ngx - migrated from r_pufky.srv.'
+        - 'roles/plex - migrated from r_pufky.srv.'
       minor_changes:
         - 'N/A'
       breaking_changes:
@@ -23,8 +25,15 @@ releases:
         - 'N/A'
     objects:
       role:
+        - name: 'firefly'
+          description: 'Firefly installation from public release tarball.'
+          namespace: null
         - name: 'navidrome'
           description: 'Navidrome music streaming server.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
           namespace: null
         - name: 'plex'
           description: 'Plex Media Server supporting PlexPass entitlements.'
