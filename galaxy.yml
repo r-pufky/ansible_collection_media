@@ -1,0 +1,40 @@
+---
+namespace: 'r_pufky'
+name: 'media'
+version: '13.0.0'
+readme: 'README.md'
+authors:
+  - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
+description: |
+  Media management and streaming services for ansible.
+license_file: 'LICENSE'
+tags:
+  - 'media'
+  - 'stream'
+  - 'management'
+  - 'linux'
+  - 'tools'
+  - 'networking'
+# Update all collections with dependency changes.
+dependencies:
+  'r_pufky.lib': '>=13.0.8,<14.0.0'
+  'r_pufky.data': '>=3.0.5'
+  'r_pufky.deb': '>=13.0.10,<14.0.0'
+  #'r_pufky.srv': '>=13.3.0,<14.0.0'
+  'r_pufky.srv': '>=13.2.1,<14.0.0'
+  'ansible.posix': '=2.1.0'
+  'community.general': '=11.4.0'
+
+repository: 'https://github.com/r-pufky/ansible_collection_media'
+documentation: 'https://github.com/r-pufky/ansible_collection_docs'
+homepage: 'https://github.com/r-pufky/ansible_collection_media'
+issues: 'https://github.com/r-pufky/ansible_collection_media/issues'
+
+build_ignore:
+  - '*molecule/*'  # Do not include molecule testing in release.
+  - 'ansible.env'  # Development ansible environment.
+  - '.ansible'  # Ansible collection cache for role testing.
+  - '.vscode'  # VSCodium settings.
+  - 'TODO.md'  # Development staging todo messages.
+  - 'COMMIT.md'  # Development staging commit messages.
+  - '*docs/*'  # Do not include development docs in release.

@@ -1,0 +1,6 @@
+[submodule "roles/navidrome"]
+	path = roles/navidrome
+	url = https://github.com/r-pufky/ansible_navidrome
+[submodule "roles/plex"]
+	path = roles/plex
+	url = https://github.com/r-pufky/ansible_plex

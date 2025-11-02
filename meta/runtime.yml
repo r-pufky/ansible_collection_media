@@ -1,0 +1,5 @@
+---
+requires_ansible: '>=2.18.0'
+
+# Reference:
+# * https://docs.ansible.com/ansible/latest/dev_guide/developing_collections_structure.html

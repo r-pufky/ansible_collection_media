@@ -1,0 +1,31 @@
+---
+# https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelog.yaml-format.md
+releases:
+  13.0.0:
+    release_date: '2025-11-02'
+    codename: '2025-11-02'
+    changes:
+      release_summary: 'Create media collection.'
+      major_changes:
+        - 'roles/plex - migrated from r_pufky.srv.'
+        - 'roles/navidrome - migrated from r_pufky.srv.'
+      minor_changes:
+        - 'N/A'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'navidrome'
+          description: 'Navidrome music streaming server.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
