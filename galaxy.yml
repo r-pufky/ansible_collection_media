@@ -1,7 +1,7 @@
 ---
 namespace: 'r_pufky'
 name: 'media'
-version: '13.0.1'
+version: '13.0.2'
 readme: 'README.md'
 authors:
   - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
@@ -26,7 +26,7 @@ dependencies:
   'community.general': '=11.4.0'
 
 repository: 'https://github.com/r-pufky/ansible_collection_media'
-documentation: 'https://github.com/r-pufky/ansible_collection_docs'
+documentation: 'https://r-pufky.github.io/ansible_collection_docs'
 homepage: 'https://github.com/r-pufky/ansible_collection_media'
 issues: 'https://github.com/r-pufky/ansible_collection_media/issues'
 
