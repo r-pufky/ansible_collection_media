@@ -1,6 +1,40 @@
 ---
 # https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelog.yaml-format.md
 releases:
+  13.0.3:
+    release_date: '2025-11-13'
+    codename: '2025-11-13'
+    changes:
+      release_summary: 'Firefly 6.4.8 release.'
+      major_changes:
+        - 'N/A'
+      minor_changes:
+        - 'roles/firefly - 13-6.4.8-1.0.0'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'firefly'
+          description: 'Firefly installation from public release tarball.'
+          namespace: null
+        - name: 'navidrome'
+          description: 'Navidrome music streaming server.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   13.0.2:
     release_date: '2025-11-06'
     codename: '2025-11-06'
