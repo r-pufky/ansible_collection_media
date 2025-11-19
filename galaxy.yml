@@ -1,7 +1,7 @@
 ---
 namespace: 'r_pufky'
 name: 'media'
-version: '13.0.4'
+version: '13.0.5'
 readme: 'README.md'
 authors:
   - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
@@ -37,4 +37,3 @@ build_ignore:
   - '.vscode'  # VSCodium settings.
   - 'TODO.md'  # Development staging todo messages.
   - 'COMMIT.md'  # Development staging commit messages.
-  - '*docs/*'  # Do not include development docs in release.

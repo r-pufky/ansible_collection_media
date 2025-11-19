@@ -1,6 +1,40 @@
 ---
 # https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelog.yaml-format.md
 releases:
+  13.0.5:
+    release_date: '2025-11-19'
+    codename: '2025-11-19'
+    changes:
+      release_summary: 'Migrate remaining role documentation.'
+      major_changes:
+        - 'N/A'
+      minor_changes:
+        - 'roles/* - Migrate remaining role documentation.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'firefly'
+          description: 'Firefly installation from public release tarball.'
+          namespace: null
+        - name: 'navidrome'
+          description: 'Navidrome music streaming server.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   13.0.4:
     release_date: '2025-11-17'
     codename: '2025-11-17'
