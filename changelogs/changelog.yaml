@@ -1,6 +1,40 @@
 ---
 # https://github.com/ansible-community/antsibull-changelog/blob/main/docs/changelog.yaml-format.md
 releases:
+  13.0.6:
+    release_date: '2025-11-24'
+    codename: '2025-11-24'
+    changes:
+      release_summary: 'Add copyparty service.'
+      major_changes:
+        - 'roles/copyparty - Add 13-1.19.20-1.0.0.'
+      minor_changes:
+        - 'roles/paperless_ngx - Update 13-2.20.0-1.0.0.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'firefly'
+          description: 'Firefly installation from public release tarball.'
+          namespace: null
+        - name: 'navidrome'
+          description: 'Navidrome music streaming server.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   13.0.5:
     release_date: '2025-11-19'
     codename: '2025-11-19'
