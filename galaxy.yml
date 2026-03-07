@@ -1,7 +1,7 @@
 ---
 namespace: 'r_pufky'
 name: 'media'
-version: '13.0.8'
+version: '1.0.0'
 readme: 'README.md'
 authors:
   - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
@@ -30,10 +30,16 @@ documentation: 'https://r-pufky.github.io/ansible_collection_docs'
 homepage: 'https://github.com/r-pufky/ansible_collection_media'
 issues: 'https://github.com/r-pufky/ansible_collection_media/issues'
 
+# Do not include: testing, environments, caches, IDE settings, or staging
+# messages in release tarball.
 build_ignore:
-  - '*molecule/*'  # Do not include molecule testing in release.
-  - 'ansible.env'  # Development ansible environment.
-  - '.ansible'  # Ansible collection cache for role testing.
-  - '.vscode'  # VSCodium settings.
-  - 'TODO.md'  # Development staging todo messages.
-  - 'COMMIT.md'  # Development staging commit messages.
+  - '*.ansible'
+  - '*.gitignore'
+  - '*.gitmodules'
+  - '*.git'
+  - '*molecule'
+  - '.envrc'
+  - '.vscode'
+  - 'ansible.env'
+  - 'TODO.md'
+  - 'COMMIT.md'
