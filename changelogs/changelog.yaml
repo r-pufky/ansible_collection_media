@@ -1,88 +1,129 @@
 ---
 ancestor: 0.0.10
 releases:
+  1.1.0:
+    release_date: '2026-04-10'
+    codename: '2026-04-10'
+    changes:
+      release_summary: 'Update dependencies, use standard nomenclature.'
+      major_changes:
+        - 'N/A'
+      minor_changes:
+        - 'r_pufky.data.v3 - 3.2.1 - Fix cache_git string truncation.'
+        - 'r_pufky.deb - 4.0.1 - r_pufky.data.v3 update.'
+        - 'community.general - 12.5.0.'
+        - 'roles/copyparty - 3.0.2 - Use standard nomenclature.'
+        - 'roles/navidrome - 4.1.0 - Use standard nomenclature.'
+        - 'roles/paperless_ngx - 14.1.0 - Use standard nomenclature.'
+        - 'roles/plex - 11.1.0 - Use standard nomenclature.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+      objects:
+        role:
+          - name: 'copyparty'
+            description: 'Copyparty portable file server.'
+            namespace: null
+          - name: 'navidrome'
+            description:
+              'Navidrome Music Streaming Server from public Debian package.'
+            namespace: null
+          - name: 'paperless_ngx'
+            description:
+              'Paperless-NGX installation from public release tarball.'
+            namespace: null
+          - name: 'plex'
+            description: 'Plex Media Server supporting PlexPass entitlements.'
+            namespace: null
   1.0.1:
     release_date: '2026-03-25'
     codename: '2026-03-25'
     changes:
-    release_summary: 'Cleanup task labels and optimize.'
-    major_changes:
-      - 'N/A'
-    minor_changes:
-      - 'Task labels cleaned up (especially for removal of files).'
-      - 'Optimize data annotation layering use.'
-    breaking_changes:
-      - 'N/A'
-    deprecated_features:
-      - 'N/A'
-    removed_features:
-      - 'N/A'
-    security_fixes:
-      - 'N/A'
-    bugfixes:
-      - 'N/A'
-    objects:
-      role:
-        - name: 'copyparty'
-          description: 'Copyparty portable file server.'
-          namespace: null
-        - name: 'navidrome'
-          description:
-            'Navidrome Music Streaming Server from public Debian package.'
-          namespace: null
-        - name: 'paperless_ngx'
-          description:
-            'Paperless-NGX installation from public release tarball.'
-          namespace: null
-        - name: 'plex'
-          description: 'Plex Media Server supporting PlexPass entitlements.'
-          namespace: null
+      release_summary: 'Cleanup task labels and optimize.'
+      major_changes:
+        - 'N/A'
+      minor_changes:
+        - 'Task labels cleaned up (especially for removal of files).'
+        - 'Optimize data annotation layering use.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+      objects:
+        role:
+          - name: 'copyparty'
+            description: 'Copyparty portable file server.'
+            namespace: null
+          - name: 'navidrome'
+            description:
+              'Navidrome Music Streaming Server from public Debian package.'
+            namespace: null
+          - name: 'paperless_ngx'
+            description:
+              'Paperless-NGX installation from public release tarball.'
+            namespace: null
+          - name: 'plex'
+            description: 'Plex Media Server supporting PlexPass entitlements.'
+            namespace: null
   1.0.0:
     release_date: '2026-03-15'
     codename: '2026-03-15'
     changes:
-    release_summary: 'Migrate to Ansible 2.20 (breaking changes).'
-    major_changes:
-      - 'Ansible 2.20 migration.'
-      - >
-        Dev: Backend environment updated and auto-configured resolving Molecule
-        25.1.0+ breakage (#301, #4380).
-    minor_changes:
-      - 'roles/* - Migrate to Ansible 2.20 support.'
-    breaking_changes:
-      - >
-        All roles have breaking changes. As ansible 2.19 resulted in touching a
-        lot of old roles, the opportunity was used to update all roles and
-        resolve issues with them. Changes across all roles include:
+      release_summary: 'Migrate to Ansible 2.20 (breaking changes).'
+      major_changes:
+        - 'Ansible 2.20 migration.'
+        - >
+          Dev: Backend environment updated and auto-configured resolving Molecule
+          25.1.0+ breakage (#301, #4380).
+      minor_changes:
+        - 'roles/* - Migrate to Ansible 2.20 support.'
+      breaking_changes:
+        - >
+          All roles have breaking changes. As ansible 2.19 resulted in touching a
+          lot of old roles, the opportunity was used to update all roles and
+          resolve issues with them. Changes across all roles include:
 
-        * Feature Flags.
-        * Migration to semantic versioning (collection and roles).
-        * Ansible 2.20 support.
-        * Removal of unused modules in the pre-release.
+          * Feature Flags.
+          * Migration to semantic versioning (collection and roles).
+          * Ansible 2.20 support.
+          * Removal of unused modules in the pre-release.
 
-        All consumers must check roles. Major breaking changes will be avoided
-        again until then next round of breaking ansible changes.
-    deprecated_features:
-      - 'N/A'
-    removed_features:
-      - 'roles/firefly'
-    security_fixes:
-      - 'N/A'
-    bugfixes:
-      - 'N/A'
-    objects:
-      role:
-        - name: 'copyparty'
-          description: 'Copyparty portable file server.'
-          namespace: null
-        - name: 'navidrome'
-          description:
-            'Navidrome Music Streaming Server from public Debian package.'
-          namespace: null
-        - name: 'paperless_ngx'
-          description:
-            'Paperless-NGX installation from public release tarball.'
-          namespace: null
-        - name: 'plex'
-          description: 'Plex Media Server supporting PlexPass entitlements.'
-          namespace: null
+          All consumers must check roles. Major breaking changes will be avoided
+          again until then next round of breaking ansible changes.
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'roles/firefly'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+      objects:
+        role:
+          - name: 'copyparty'
+            description: 'Copyparty portable file server.'
+            namespace: null
+          - name: 'navidrome'
+            description:
+              'Navidrome Music Streaming Server from public Debian package.'
+            namespace: null
+          - name: 'paperless_ngx'
+            description:
+              'Paperless-NGX installation from public release tarball.'
+            namespace: null
+          - name: 'plex'
+            description: 'Plex Media Server supporting PlexPass entitlements.'
+            namespace: null

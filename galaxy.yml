@@ -1,7 +1,7 @@
 ---
 namespace: 'r_pufky'
 name: 'media'
-version: '1.0.1'
+version: '1.1.0'
 readme: 'README.md'
 authors:
   - 'Robert Pufky <rpufky@gmail.com> (https://github.com/r-pufky)'
@@ -18,10 +18,10 @@ tags:
   - 'networking'
 # Update all collections with dependency changes.
 dependencies:
-  'r_pufky.data': '>=3.2.0,<4.0.0'
-  'r_pufky.deb': '>=4.0.0,<5.0.0'
+  'r_pufky.data': '>=3.2.1,<4.0.0'
+  'r_pufky.deb': '>=4.0.1,<5.0.0'
   'ansible.posix': '>=2.1.0,<3.0.0'
-  'community.general': '>=12.4.0,<13.0.0'
+  'community.general': '>=12.5.0,<13.0.0'
 
 repository: 'https://github.com/r-pufky/ansible_collection_media'
 documentation: 'https://r-pufky.github.io/ansible_docs'
