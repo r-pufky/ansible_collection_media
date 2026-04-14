@@ -1,6 +1,57 @@
 ---
 ancestor: 0.0.10
 releases:
+  1.1.1:
+    release_date: '2026-04-14'
+    codename: '2026-04-14'
+    changes:
+      release_summary: 'Fix vulnerabilities, bad Plex .deb package releases.'
+      major_changes:
+        - 'r_pufky.deb - 4.0.2 - Fix edge cases.'
+      minor_changes:
+        - 'roles/navidrome - 4.1.1 - Update base version.'
+        - 'roles/paperless_ngx - 14.1.1 - Add docs for jinja2 templates.'
+        - >
+          roles/plex - 11.1.1 - Update maintenance tasks.
+
+          Multiple bad Debian Plex package releases have left additional crufty
+          APT signing keys in multiple locations. Update maintenance task to
+          remove all known APT key locations that Plex package has installed if
+          an old install is detected.
+
+          This will fix the broken APT state that the Plex packaging has left
+          many Debian systems in.
+
+          Manual intervention may be required, or re-create the install.
+
+          Reference:
+          * https://support.plex.tv/articles/235974187-enable-repository-updating-for-supported-linux-server-distributions
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+      objects:
+        role:
+          - name: 'copyparty'
+            description: 'Copyparty portable file server.'
+            namespace: null
+          - name: 'navidrome'
+            description:
+              'Navidrome Music Streaming Server from public Debian package.'
+            namespace: null
+          - name: 'paperless_ngx'
+            description:
+              'Paperless-NGX installation from public release tarball.'
+            namespace: null
+          - name: 'plex'
+            description: 'Plex Media Server supporting PlexPass entitlements.'
+            namespace: null
   1.1.0:
     release_date: '2026-04-10'
     codename: '2026-04-10'
