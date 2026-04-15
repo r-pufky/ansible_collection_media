@@ -1,6 +1,44 @@
 ---
 ancestor: 0.0.10
 releases:
+  1.1.2:
+    release_date: '2026-04-15'
+    codename: '2026-04-15'
+    changes:
+      release_summary: 'Update documentation.'
+      major_changes:
+        - 'N/A'
+      minor_changes:
+        - 'r_pufky.data - 3.2.2 - Update documentation.'
+        - 'r_pufky.deb - 4.0.3 - Update documentation.'
+        - 'roles/* - Documentation links/glyphs updated.'
+        - 'README.md - Add note about migration to non-beta release.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   1.1.1:
     release_date: '2026-04-14'
     codename: '2026-04-14'
@@ -36,22 +74,22 @@ releases:
         - 'N/A'
       bugfixes:
         - 'N/A'
-      objects:
-        role:
-          - name: 'copyparty'
-            description: 'Copyparty portable file server.'
-            namespace: null
-          - name: 'navidrome'
-            description:
-              'Navidrome Music Streaming Server from public Debian package.'
-            namespace: null
-          - name: 'paperless_ngx'
-            description:
-              'Paperless-NGX installation from public release tarball.'
-            namespace: null
-          - name: 'plex'
-            description: 'Plex Media Server supporting PlexPass entitlements.'
-            namespace: null
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   1.1.0:
     release_date: '2026-04-10'
     codename: '2026-04-10'
@@ -77,22 +115,22 @@ releases:
         - 'N/A'
       bugfixes:
         - 'N/A'
-      objects:
-        role:
-          - name: 'copyparty'
-            description: 'Copyparty portable file server.'
-            namespace: null
-          - name: 'navidrome'
-            description:
-              'Navidrome Music Streaming Server from public Debian package.'
-            namespace: null
-          - name: 'paperless_ngx'
-            description:
-              'Paperless-NGX installation from public release tarball.'
-            namespace: null
-          - name: 'plex'
-            description: 'Plex Media Server supporting PlexPass entitlements.'
-            namespace: null
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   1.0.1:
     release_date: '2026-03-25'
     codename: '2026-03-25'
@@ -113,22 +151,22 @@ releases:
         - 'N/A'
       bugfixes:
         - 'N/A'
-      objects:
-        role:
-          - name: 'copyparty'
-            description: 'Copyparty portable file server.'
-            namespace: null
-          - name: 'navidrome'
-            description:
-              'Navidrome Music Streaming Server from public Debian package.'
-            namespace: null
-          - name: 'paperless_ngx'
-            description:
-              'Paperless-NGX installation from public release tarball.'
-            namespace: null
-          - name: 'plex'
-            description: 'Plex Media Server supporting PlexPass entitlements.'
-            namespace: null
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   1.0.0:
     release_date: '2026-03-15'
     codename: '2026-03-15'
@@ -162,19 +200,19 @@ releases:
         - 'N/A'
       bugfixes:
         - 'N/A'
-      objects:
-        role:
-          - name: 'copyparty'
-            description: 'Copyparty portable file server.'
-            namespace: null
-          - name: 'navidrome'
-            description:
-              'Navidrome Music Streaming Server from public Debian package.'
-            namespace: null
-          - name: 'paperless_ngx'
-            description:
-              'Paperless-NGX installation from public release tarball.'
-            namespace: null
-          - name: 'plex'
-            description: 'Plex Media Server supporting PlexPass entitlements.'
-            namespace: null
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
