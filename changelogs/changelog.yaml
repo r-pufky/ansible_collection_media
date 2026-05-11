@@ -1,6 +1,41 @@
 ---
 ancestor: 0.0.10
 releases:
+  1.1.3:
+    release_date: '2026-05-10'
+    codename: '2026-05-10'
+    changes:
+      release_summary: 'Update Paperless.'
+      major_changes:
+        - 'N/A'
+      minor_changes:
+        - 'r_pufky.paperless_ngx - 14.1.2 - Confirm 2.20.15 support and default.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   1.1.2:
     release_date: '2026-04-15'
     codename: '2026-04-15'
