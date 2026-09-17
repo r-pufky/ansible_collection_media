@@ -1,6 +1,43 @@
 ---
 ancestor: 0.0.10
 releases:
+  1.1.6:
+    release_date: '2026-09-17'
+    codename: '2026-09-17'
+    changes:
+      release_summary: 'Update default supported releases.'
+      major_changes:
+        - 'r_pufky.navidrome - 4.3.0 - v0.64.0 address critical vulnerabilities.'
+        - 'r_pufky.paperless_ngx - 15.2.0 - v3.1.3 address critical vulnerabilities.'
+      minor_changes:
+        - 'r_pufky.copyparty - 3.0.4 - Validate v1.20.23.'
+        - 'r_pufky.plex - 11.1.4 - Validate 1.43.4.10903.'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - 'N/A'
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   1.1.5:
     release_date: '2026-08-04'
     codename: '2026-08-04'
