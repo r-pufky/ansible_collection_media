@@ -1,6 +1,48 @@
 ---
 ancestor: 0.0.10
 releases:
+  1.2.1:
+    release_date: '2026-10-23'
+    codename: '2026-10-23'
+    changes:
+      release_summary: 'Update roles for eMudhra root CA cert compromise.'
+      major_changes:
+        - 'r_pufky.plex - 12.0.1 - Validate 1.43.5.11079.'
+        - 'r_pufky.paperless_ngx - 15.2.2 - Validate v3.3.4.'
+      minor_changes:
+        - 'N/A'
+      breaking_changes:
+        - 'N/A'
+      deprecated_features:
+        - 'N/A'
+      removed_features:
+        - 'N/A'
+      security_fixes:
+        - >
+          eMudra root CA cert compromise role updates.
+
+          Minimum supported versions have been updated which remove trust for
+          compromised certificates. Upgrade as soon as possible.
+
+          https://blog.google/security/protecting-chrome-and-android-users-from-compromised-emudhra-intermediate-ca-certificates/
+      bugfixes:
+        - 'N/A'
+    objects:
+      role:
+        - name: 'copyparty'
+          description: 'Copyparty portable file server.'
+          namespace: null
+        - name: 'navidrome'
+          description:
+            'Navidrome Music Streaming Server from public Debian package.'
+          namespace: null
+        - name: 'paperless_ngx'
+          description:
+            'Paperless-NGX installation from public release tarball.'
+          namespace: null
+        - name: 'plex'
+          description: 'Plex Media Server supporting PlexPass entitlements.'
+          namespace: null
   1.2.0:
     release_date: '2026-10-16'
     codename: '2026-10-16'
